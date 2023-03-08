@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e2a7d0a03e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/desktop.css" media="(min-width:740px)">
+    <title>Porcentaje de endeudamiento</title>
+</head>
+<body>
+    <section class="header">
+        <div class="headerContainer">
+            <h1 class="headerContainer__tittle">Capacidad de endeudamiento</h1>
+            <i class="fa-solid fa-chart-simple icon"></i>
+        </div>
+    </section>
+
+    <section class="steps">
+        <div class="stepsContainer">
+            <div class="stepsContainer__circle">
+                <p class="stepsContainer__number">1</p>
+            </div>
+            <p class="stepsContainer__content">Ingresa tus </br>ingresos y egresos</p>
+        </div>
+        <div class="stepsContainer">
+            <div class="stepsContainer__circle">
+                <p class="stepsContainer__number">2</p>
+            </div>
+            <p class="stepsContainer__content">Genera tu resultado</p>
+        </div>
+        <div class="stepsContainer">
+            <div class="stepsContainer__circle">
+                <p class="stepsContainer__number">3</p>
+            </div>
+            <p class="stepsContainer__content">Analiza tu resultado</p>
+        </div>
+    </section>
+
+    <section class="main">
+        <section class="main__container">
+            <section class="data" action="">
+                
+                <label class="data__item" for="cantidad">
+                    <span class="data__field">Monto</span>
+                    <input id="amount" class="data__input" type="text" id="cantidad" placeholder=" $ 0,00">
+                </label>
+
+                <label class="data__item" for="tipo">
+                    <span class="data__field">Tipo de cantidad</span>
+                    <select id="tipoValue" class="data__input" name="tipo">
+                        <option value="">Tipo de cantidad</option>
+                        <option value="ADD">Ingreso</option>
+                        <option value="RES">Egreso</option>
+                    </select>
+                </label>
+
+                <div class="data__buttons">
+                    <button id="ingresar" class="btn btn--primary" type="button">Ingresar</button>
+                    <!-- <button id="generar" class="btn btn--secondary" type="button">Calcular</button> -->
+                </div>
+            </section>
+        </section>
+
+        <section id="mainContainer" class="main__container main__container--outcome">
+            <div class="headerContainer headerContainer--outcome">
+                <h1 class="headerContainer__tittle">Informe</h1>
+                <i class="fa-solid fa-percent icon"></i>
+            </div>
+
+            <section class="outcome">
+                <!-- <div class="outcome__abstract">
+                    <div class="outcome__header">
+                        <h3 class="outcome__title">Total ingresos</h3>
+                        <span class="outcome__content">$ 800.00</span>
+                    </div>
+                </div> -->
+                <!-- <div class="outcome__abstract">
+                    <div class="outcome__header">
+                        <h3 class="outcome__title">Total egresos</h3>
+                        <span class="outcome__content outcome__content--red">$ 800.00</span>
+                    </div>
+                </div> -->
+
+                <!-- <section class="detail">
+                    <h2 class="detail__header">Tu porcentaje de endeudamiento es el siguiente</h2>
+                    <p class="detail__result outcome__content outcome__content--percent">$800,00</p>
+                    <p class="detail__analyst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda repellendus earum illum expedita quibusdam architecto doloremque possimus consectetur, quos tempora saepe facilis voluptate debitis aliquid, impedit atque minus esse ipsa.</p>
+                </section> -->
+            </section>
+        </section>
+    </section>
+
+    <script src="./JS/app.js"></script>
+</body>
+</html>

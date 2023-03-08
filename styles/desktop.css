@@ -1,0 +1,22 @@
+.headerContainer{
+    justify-content: center;
+    max-width: 72rem;
+    gap: 4rem;
+}
+.steps{
+    display: flex;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.stepsContainer{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+.stepsContainer__content{
+    margin-block-start: 0;
+}
+.main__container{
+    max-width: 62rem;
+}
